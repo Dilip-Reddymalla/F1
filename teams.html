@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link rel="stylesheet" href="css/teams.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="drivers.html">Drivers</a>
+            <a href="teams.html">Teams</a>
+            <a href="races.html" id="pending">Races</a>
+            <a href="standings.html">Standings</a>
+        </nav>
+        <div class="logo">
+            <img src="assets/f1.png" alt="F1 logo">
+        </div>
+    </header>
+
+    <main>
+        <h1>Teams in the Year</h1>
+
+        <div class="dropdown">
+            <label for="year">Select Year:</label>
+            <select id="year" name="year"></select>
+            <button id="button">Get Teams</button>
+        </div>
+
+        <!-- Teams will be shown here by teams.js -->
+        <div id="teams-container"></div>
+    </main>
+
+    <script src="js/year.js"></script>
+    <script src="js/teams.js"></script>
+</body>
+
+</html>

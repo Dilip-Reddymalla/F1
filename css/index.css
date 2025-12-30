@@ -1,0 +1,164 @@
+   /* Reset & Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: #0b0b0d;
+  --bg-surface: #1a1a1e;
+  --accent-primary: #e10600;
+  --text-primary: #ffffff;
+  --text-secondary: #b5b7ba;
+  --accent-success: #00e676;
+  --accent-warning: #ffd600;
+  --accent-info: #00b0ff;
+  --border-subtle: #2a2a30;
+}
+
+
+   /* Base */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+
+   /* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 0.75rem 3rem;
+  background: linear-gradient(
+    90deg,
+    var(--accent-primary),
+    #b80000
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.navbar nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar nav a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.navbar nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--text-primary);
+  transition: width 0.2s ease;
+}
+
+.navbar nav a:hover::after {
+  width: 100%;
+}
+
+.logo img {
+  width: 44px;
+  height: 44px;
+}
+
+
+   /* Sections */
+
+section {
+  min-height: 100vh;
+  padding: 4rem 3.5rem;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+   /* Intro Section */
+
+.intro h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+}
+
+.intro img {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2.5rem;
+  border-radius: 6px;
+}
+
+
+   /* Championship Sections */
+.constructorChamp,
+.driversChamp {
+  max-width: 100%;
+}
+
+.constructorChamp h2,
+.driversChamp h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.constructorChamp p,
+.driversChamp p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 720px;
+}
+
+.constructorChamp img,
+.driversChamp img {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2rem;
+  border-radius: 6px;
+}
+
+
+   /* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1.5rem;
+  }
+
+  section {
+    padding: 3rem 1.5rem;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .constructorChamp h2,
+  .driversChamp h2 {
+    font-size: 1.6rem;
+  }
+}

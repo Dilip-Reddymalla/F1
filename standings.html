@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standings</title>
+    <link rel="stylesheet" href="css/standings.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="drivers.html">Drivers</a>
+            <a href="teams.html">Teams</a>
+            <a href="races.html" id="pending">Races</a>
+            <a href="standings.html">Standings</a>
+        </nav>
+        <div class="logo">
+            <img src="assets/f1.png" alt="F1 logo">
+        </div>
+    </header>
+
+    <main>
+        <h1>Championship in the Year</h1>
+
+        <div class="dropdown">
+            <label for="year">Select Year:</label>
+            <select id="year" name="year"></select>
+            <label for="type">Select Championship Type:</label>
+            <select id="type" name="championship">
+                <option value="Drivers Championship">Drivers Championship</option>  
+                <option value="Constructors Championship">Constructors Championship</option>
+            </select>
+            <button id="button">Get Standings</button>
+        </div>
+
+        <!-- Standings will be injected here by standings.js -->
+        <div id="standings-container"></div>
+    </main>
+
+    <script src="js/year.js"></script>
+    <script src="js/standings.js"></script>
+</body>
+
+</html>
