@@ -19,7 +19,6 @@ A modern **Formula 1 (F1) frontend web application** that presents information a
 - [Screenshots](#-screenshots)
 - [Future Enhancements](#-future-enhancements)
 - [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
@@ -40,6 +39,16 @@ The application is lightweight, fast, and does not require any backend or databa
 - 📊 Championship Standings
 - 🎨 Clean and responsive UI
 - ⚡ Pure frontend (no backend required)
+
+---
+## 🌐 Live Demo
+
+```text
+This website is hosted using GitHub Pages.
+
+Live URL:
+https://dilip-reddymalla.github.io/F1/
+```
 
 ---
 
@@ -89,7 +98,7 @@ F1/
 ### Installation
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Dilip-Reddymalla/F1.git
 cd F1
 ```
 
@@ -107,7 +116,6 @@ Open index.html in your browser
 - Add search and filtering options
 - Improve UI with animations and transitions
 - Enhance mobile responsiveness
-- Deploy using GitHub Pages or Netlify
 
 ---
 
